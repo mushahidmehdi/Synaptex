@@ -63,11 +63,6 @@ export default function BookAHotel({ countries }) {
           rel='canonical'
           href='https://www.synaptexconsultancy.pk/book-a-hotel'
         />
-        <link rel='preconnect' href='https://fonts.googleapis.com' />
-        <link
-          href='https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400..900;1,400..900&family=Jost:wght@100..900&display=swap'
-          rel='stylesheet'
-        />
         <script
           type='application/ld+json'
           dangerouslySetInnerHTML={{

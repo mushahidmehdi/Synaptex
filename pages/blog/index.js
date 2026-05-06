@@ -13,6 +13,87 @@ const C = {
 
 const POSTS = [
   {
+    slug: 'dry-fruits-gilgit-baltistan-complete-guide',
+    title: 'Dry Fruits of Gilgit Baltistan — A Complete Guide',
+    excerpt:
+      'A comprehensive guide to the finest dry fruits grown in GB — sun-dried apricots, Himalayan walnuts, almonds, chilgoza pine nuts, and mulberries, and why they rank among the purest in the world.',
+    tag: 'Dry Fruits',
+    date: 'April 20, 2026',
+    readTime: '9 min read',
+  },
+  {
+    slug: 'health-benefits-hunza-dry-fruits',
+    title: 'Health Benefits of Hunza Dry Fruits — Why They Are the Best in the World',
+    excerpt:
+      'Science-backed nutritional breakdown of Hunza apricots, GB walnuts, almonds, chilgoza, and mulberries — and why high-altitude growing conditions make them nutritionally superior.',
+    tag: 'Health & Nutrition',
+    date: 'April 18, 2026',
+    readTime: '8 min read',
+  },
+  {
+    slug: 'hunza-apricots-golden-fruit-pakistan',
+    title: "Hunza Apricots — Pakistan's Golden Fruit & How to Buy the Best",
+    excerpt:
+      'Varieties, sun-drying methods, apricot kernel oil, and a sensory guide to identifying genuine Hunza apricots versus sulphur-treated commercial fakes.',
+    tag: 'Apricots',
+    date: 'April 15, 2026',
+    readTime: '8 min read',
+  },
+  {
+    slug: 'chilgoza-pine-nuts-gilgit-baltistan',
+    title: "Chilgoza Pine Nuts of Gilgit Baltistan — The World's Most Prized Nut",
+    excerpt:
+      'The full story of Pinus gerardiana chilgoza pine nuts — hand-harvest in remote Baltistan forests, extraordinary nutrition, pinolenic acid science, and culinary uses.',
+    tag: 'Pine Nuts · Chilgoza',
+    date: 'April 10, 2026',
+    readTime: '7 min read',
+  },
+  {
+    slug: 'buy-dry-fruits-gilgit-baltistan-online',
+    title: 'How to Buy Authentic Dry Fruits from Gilgit Baltistan — A Buyer\'s Guide',
+    excerpt:
+      'How to spot genuine GB dry fruits, understand fair pricing, avoid fake "Hunza" products, and order direct from Arguni Dry Fruits in Skardu.',
+    tag: "Buyer's Guide",
+    date: 'April 8, 2026',
+    readTime: '7 min read',
+  },
+  {
+    slug: 'professional-training-capacity-building-pakistan',
+    title: 'Professional Training & Capacity Building in Pakistan',
+    excerpt:
+      'How Synaptex Consultancy delivers industry-driven training in IT, project management, leadership, and emerging technologies to build the human capital Pakistani organisations need.',
+    tag: 'Training',
+    date: 'April 5, 2026',
+    readTime: '7 min read',
+  },
+  {
+    slug: 'it-solutions-smes-pakistan',
+    title: 'IT Solutions for Small & Medium Businesses in Pakistan',
+    excerpt:
+      'How Synaptex Consultancy helps Pakistani SMEs embrace digital transformation through custom software development, cloud infrastructure, and cybersecurity services.',
+    tag: 'Technology',
+    date: 'March 10, 2026',
+    readTime: '7 min read',
+  },
+  {
+    slug: 'umrah-ziarat-travel-packages-synaptex',
+    title: 'Umrah & Ziarat Travel Packages from Pakistan — Synaptex Consultancy',
+    excerpt:
+      'Synaptex partners with Karvan Noor Zehra and Rupal Expeditions to offer fully managed pilgrimage packages covering visas, flights, hotels, and ground transport.',
+    tag: 'Umrah & Pilgrimage',
+    date: 'February 20, 2026',
+    readTime: '8 min read',
+  },
+  {
+    slug: 'digital-marketing-businesses-pakistan',
+    title: 'Digital Marketing for Pakistani Businesses — Growing Your Online Presence',
+    excerpt:
+      'Synaptex Consultancy delivers SEO, social media marketing, and performance analytics to help Pakistani businesses build a powerful digital footprint and drive real growth.',
+    tag: 'Marketing',
+    date: 'January 15, 2026',
+    readTime: '6 min read',
+  },
+  {
     slug: 'best-hotel-booking-platforms-pakistan',
     title: 'Best Hotel Booking Platforms in Pakistan 2025',
     excerpt:
@@ -61,16 +142,9 @@ export default function BlogIndex() {
         />
         <meta name='robots' content='index, follow' />
         <link rel='canonical' href='https://synaptex.pk/blog' />
-        <link rel='preconnect' href='https://fonts.googleapis.com' />
-        <link
-          rel='preconnect'
-          href='https://fonts.gstatic.com'
-          crossOrigin='anonymous'
-        />
-        <link
-          href='https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,600;1,400;1,600&family=Jost:wght@300;400;500&display=swap'
-          rel='stylesheet'
-        />
+        <link rel='icon' type='image/png' href='/logo.png' />
+        <link rel='apple-touch-icon' href='/logo.png' />
+
       </Head>
 
       <div

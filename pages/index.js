@@ -354,12 +354,8 @@ export default function Home() {
           }}
         />
 
-        <link rel='icon' href='/favicon.ico' />
-        <link rel='preconnect' href='https://fonts.googleapis.com' />
-        <link
-          href='https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400..900;1,400..900&family=Jost:wght@100..900&display=swap'
-          rel='stylesheet'
-        />
+        <link rel='icon' type='image/png' href='/logo.png' />
+        <link rel='apple-touch-icon' href='/logo.png' />
       </Head>
 
       <style>{`
@@ -396,18 +392,19 @@ export default function Home() {
         .theme-btn { background: transparent; border: 1px solid ${c.border}; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; color: ${c.text}; transition: 0.2s ${ease}; }
         .theme-btn:hover { border-color: ${c.accent}; color: ${c.accent}; }
         @media (max-width: 1024px) { .bento-grid { grid-template-columns: repeat(2, 1fr) !important; } }
-        @media (max-width: 640px) { .bento-grid { grid-template-columns: 1fr !important; } .bento-card.large, .bento-card.medium { grid-column: span 1; grid-row: span 1; min-height: 260px; } .dnav { display: none !important; } .mnav { display: flex !important; } }
+        @media (max-width: 640px) { .bento-grid { grid-template-columns: 1fr !important; } .bento-card.large, .bento-card.medium { grid-column: span 1; grid-row: span 1; min-height: 260px; } .dnav { display: none !important; } .mnav { display: flex !important; } .mobile-nav { padding: 0 1rem !important; } }
         @media (min-width: 641px) { .dnav { display: flex !important; } .mnav { display: none !important; } }
       `}</style>
 
       {/* ══ NAVBAR — floating pill ══════════════════════════ */}
       <nav
+        className='mobile-nav'
         style={{
           position: 'fixed',
-          top: '1.5rem',
+          top: '1rem',
           left: '50%',
           transform: 'translateX(-50%)',
-          width: 'calc(100% - 6rem)',
+          width: 'calc(100% - 2rem)',
           maxWidth: 1100,
           height: '4.5rem',
           background: c.glass,
@@ -556,7 +553,7 @@ export default function Home() {
           style={{
             position: 'fixed',
             inset: 0,
-            zIndex: 999,
+            zIndex: 1001,
             background: c.base,
             display: 'flex',
             flexDirection: 'column',
@@ -1290,6 +1287,22 @@ export default function Home() {
                 natural dry fruits, nuts, and herbal products — supporting local
                 farming communities through ethical and sustainable trade.
               </p>
+              <a
+                href='/arguni-dry-fruits'
+                style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: 8,
+                  marginTop: '1.5rem',
+                  fontSize: '0.78rem',
+                  fontWeight: 500,
+                  textTransform: 'uppercase',
+                  letterSpacing: '0.1em',
+                  color: c.accent,
+                }}
+              >
+                Explore Arguni →
+              </a>
             </div>
           </div>
         </div>
@@ -1454,28 +1467,28 @@ export default function Home() {
           >
             {[
               {
-                href: '/blog/best-hotel-booking-platforms-pakistan',
-                tag: 'Booking',
-                title: 'Best Hotel Booking Platforms in Pakistan 2026',
-                date: 'Mar 15, 2025',
+                href: '/blog/professional-training-capacity-building-pakistan',
+                tag: 'Training',
+                title: 'Professional Training & Capacity Building in Pakistan',
+                date: 'Apr 5, 2026',
               },
               {
-                href: '/blog/umrah-hotel-booking-guide',
+                href: '/blog/it-solutions-smes-pakistan',
+                tag: 'Technology',
+                title: 'IT Solutions for Small & Medium Businesses in Pakistan',
+                date: 'Mar 10, 2026',
+              },
+              {
+                href: '/blog/umrah-ziarat-travel-packages-synaptex',
                 tag: 'Umrah',
-                title: 'Complete Guide to Booking Hotels for Umrah 2026',
-                date: 'Feb 10, 2025',
+                title: 'Umrah & Ziarat Travel Packages from Pakistan',
+                date: 'Feb 20, 2026',
               },
               {
-                href: '/blog/hotels-gilgit-baltistan',
-                tag: 'Travel',
-                title: 'Top Hotels in Gilgit-Baltistan & Skardu',
-                date: 'Apr 1, 2026',
-              },
-              {
-                href: '/blog/how-to-book-hotels-online-pakistan',
-                tag: 'Guide',
-                title: 'How to Book Hotels Online in Pakistan',
-                date: 'Jan 20, 2026',
+                href: '/blog/digital-marketing-businesses-pakistan',
+                tag: 'Marketing',
+                title: 'Digital Marketing for Pakistani Businesses',
+                date: 'Jan 15, 2026',
               },
             ].map(({ href, tag, title, date }) => (
               <a

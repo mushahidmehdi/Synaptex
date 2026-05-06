@@ -53,16 +53,9 @@ export default function BestHotelBookingPlatformsPakistan() {
           rel='canonical'
           href='https://synaptex.pk/blog/best-hotel-booking-platforms-pakistan'
         />
-        <link rel='preconnect' href='https://fonts.googleapis.com' />
-        <link
-          rel='preconnect'
-          href='https://fonts.gstatic.com'
-          crossOrigin='anonymous'
-        />
-        <link
-          href='https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,600;1,400;1,600&family=Jost:wght@300;400;500&display=swap'
-          rel='stylesheet'
-        />
+        <link rel='icon' type='image/png' href='/logo.png' />
+        <link rel='apple-touch-icon' href='/logo.png' />
+
         <script
           type='application/ld+json'
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
