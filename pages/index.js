@@ -654,6 +654,7 @@ export default function Home() {
               textTransform: 'uppercase',
               color: c.accent,
               marginBottom: '0.75rem',
+              marginTop: '3rem',
             }}
           >
             Rawalpindi & Skardu · Est. 2023
