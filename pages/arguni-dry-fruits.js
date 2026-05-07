@@ -23,17 +23,17 @@ const IMG = {
   apricots:
     'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=900&q=80&auto=format&fit=crop',
   walnuts:
-    'https://placehold.co/900x600/0d1f0d/6DB560?text=GB+Walnuts',
+    'https://images.unsplash.com/photo-1635843108103?w=900&q=80&auto=format&fit=crop',
   almonds:
-    'https://placehold.co/900x600/0d1f0d/6DB560?text=High-Altitude+Almonds',
+    'https://images.unsplash.com/photo-1615485737457-f07082c77813?w=900&q=80&auto=format&fit=crop',
   pinenuts:
-    'https://placehold.co/900x600/0d1f0d/6DB560?text=Chilgoza+Pine+Nuts',
+    'https://images.unsplash.com/photo-1661494290469-31631c2953c5?w=900&q=80&auto=format&fit=crop',
   mulberry:
-    'https://placehold.co/900x600/0d1f0d/6DB560?text=Dried+Mulberries',
+    'https://images.unsplash.com/photo-1756364898242-9383ce89a503?w=900&q=80&auto=format&fit=crop',
   valley:
     'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&q=80&auto=format&fit=crop',
   harvest:
-    'https://placehold.co/900x600/0d1f0d/6DB560?text=Apricot+Kernel+Oil',
+    'https://images.unsplash.com/photo-1608571702600-5a5419d31475?w=900&q=80&auto=format&fit=crop',
   skardu:
     'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80&auto=format&fit=crop',
   packing:
@@ -276,6 +276,8 @@ export default function ArguniDryFruits() {
           .process-grid { grid-template-columns: 1fr !important; }
           .stats-row { grid-template-columns: repeat(2, 1fr) !important; }
           .hamburger-btn { display: flex !important; }
+          .nav-cta { display: none !important; }
+          .nav-brand-text { font-size: 14px !important; }
         }
         @media (min-width: 641px) {
           .hamburger-btn { display: none !important; }
@@ -320,12 +322,14 @@ export default function ArguniDryFruits() {
             🌿
           </div>
           <span
+            className='nav-brand-text'
             style={{
               fontFamily: "'Bodoni Moda', serif",
               fontSize: 17,
               fontWeight: 600,
               letterSpacing: 0.5,
               color: C.text,
+              whiteSpace: 'nowrap',
             }}
           >
             Arguni Dry Fruits
@@ -379,7 +383,7 @@ export default function ArguniDryFruits() {
               textTransform: 'uppercase',
               whiteSpace: 'nowrap',
             }}
-            className='cta-btn'
+            className='cta-btn nav-cta'
           >
             Order Now
           </a>
